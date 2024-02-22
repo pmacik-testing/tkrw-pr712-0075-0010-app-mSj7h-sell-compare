@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-jymq
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0010-tenant/tkrw-pr712-0075-0010-app/devfile-sample-jymq@sha256:1447ed957a38901f3e7b5fa31d03eac6cf0ebbf77fbcaff6ed7dc8a864ceb55c
+        name: my-nodejs
+        resources: {}
+status: {}
